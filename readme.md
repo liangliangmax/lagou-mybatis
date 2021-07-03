@@ -12,3 +12,8 @@
 7. executor在执行的时候，会将解析的语句形成boundSql对象，里面封装着要执行的句子，以及参数列表
 8. executor调用原生jdbc去执行sql，操作数据库
 9. 执行完毕后将结果返回到调用方
+
+## 测试方法
+1. liang-mybatis-core为核心模块，里面是底层逻辑
+2. liang-mybatis-test为测试模块，com.liang.mybatis.test.MybatisTest 为测试类。
+3. 运行是，先修改liang-mybatis-test的resources下的sqlMapConfig.xml，将数据库改为正确的值
